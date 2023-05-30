@@ -1,6 +1,8 @@
 .Navbar{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0px 45px;
 }
 
 .searchBar input{
@@ -14,5 +16,10 @@
 
 .searchBar input:focus{
     outline: none;
-    border: 1px solid lightblue;
+    border: 1px solid rgb(46, 120, 144);
+}
+
+.userOption{
+    display: flex;
+   align-items: center;
 }

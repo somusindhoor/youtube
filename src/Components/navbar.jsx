@@ -13,8 +13,9 @@ function  Navbar() {
                 <input type="text" placeholder='search' />
             </div>
             <div className="userOption">
-                <img width={35} src={Notification} alt="" />
                 <img width={35} src={AddVideo} alt="" />
+                <img width={35} src={Notification} alt="" />
+                <p>S</p>
             </div>
         </div>
     )
