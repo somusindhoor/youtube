@@ -15,7 +15,9 @@ function  Navbar() {
             <div className="userOption">
                 <img width={35} src={AddVideo} alt="" />
                 <img width={35} src={Notification} alt="" />
-                <p>S</p>
+                <div className="profile">
+                    <h3>S</h3>
+                </div>
             </div>
         </div>
     )
