@@ -1,7 +1,12 @@
 import '../styles/addVideo.css'
 import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const AddVideo = () => {
+
+    let navigate = useNavigate()
+
 let thumbnail = useRef(null)
 let title = useRef(null)
 let channel = useRef(null)
@@ -21,6 +26,7 @@ let upload = (e)=>{
     body:JSON.stringify(data)
    })
    alert('video uploaded successfully')
+   navigate('/')
 }
 
     return ( 

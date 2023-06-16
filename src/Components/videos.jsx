@@ -20,9 +20,13 @@ const Videos = () => {
     })
 
     let removeVideo = (id,channel) => {
-        let result = video.filter( (x)=> x.id!==id)
-        setVideo(result)
-        alert(`${channel} got deleted`)
+        // let result = video.filter( (x)=> x.id!==id)
+        // setVideo(result)
+        // alert(`${channel} got deleted`) // This is only temparory not permanent deleted
+        fetch(`http://localhost:4000/videos/${id}`,{
+            method:'DELETE'
+        })
+        alert(`${channel} video got deleted`)
     }
 
    
@@ -46,7 +50,9 @@ const Videos = () => {
                         )
                     })
                 }
-                <h1>Shorts</h1>
+                
+               <div className="main">
+               <h1>Shorts</h1>
                 <div className="shortData">
                     {
                         shorts.map((data) => {
@@ -62,6 +68,7 @@ const Videos = () => {
                         })
                     }
                 </div>
+               </div>
             </div>
         </div>
     );
